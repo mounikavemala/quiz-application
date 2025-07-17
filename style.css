@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #444;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#quiz-container h2 {
+  margin-bottom: 15px;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.options-list li {
+  background-color: #444;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.options-list li:hover {
+  background-color: #007acc;
+}
+
+.options-list li.selected {
+  background-color: #005f99;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #21a1f1;
+}
+
+#timer {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+#leaderboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+#leaderboard-list li {
+  background-color: #444;
+  margin: 6px 0;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: left;
+}
